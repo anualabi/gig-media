@@ -2,9 +2,9 @@
 
 1.  **Environment file**
 
-```Create a .env.development file in the project root with the following keys and values:
+Create a .env.development file in the project root with the following keys and values:
 
-COMPANY_API=http://207.154.254.31/api/
+```COMPANY_API=http://207.154.254.31/api/
 API_TOKEN=aaEe20K65nsGHEsQyrWWAtWE6SX81R8Lqv5tOgax4zNuaaNvL8nsA6X1N337PVBZKodyrc
 ```
 
