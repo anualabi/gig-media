@@ -18,13 +18,5 @@ module.exports = {
 		"gatsby-plugin-sitemap",
 		"gatsby-plugin-offline",
 		"gatsby-transformer-sharp",
-		{
-			resolve: "gatsby-source-filesystem",
-			options: {
-				name: "images",
-				path: "./src/assets/images/",
-			},
-			__key: "images",
-		},
 	],
 };
