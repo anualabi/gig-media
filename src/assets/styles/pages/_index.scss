@@ -1,0 +1,94 @@
+.site-wrapper {
+	height: 100vh;
+	width: 100vw;
+	margin: auto;
+	display: grid;
+	grid-gap: 2px;
+	grid-template-columns: repeat(30, 1fr);
+
+	.value-1,
+	.value-6 {
+		grid-column: col-width(1);
+	}
+	.value-2,
+	.value-7 {
+		grid-column: col-width(11);
+	}
+	.value-3,
+	.value-8 {
+		grid-column: col-width(21);
+	}
+	.value-4,
+	.value-9 {
+		grid-column: col-width(1);
+		grid-row: 2;
+	}
+	.value-5,
+	.value-10 {
+		grid-column: col-width(21);
+		grid-row: 2;
+	}
+
+	#logo {
+		background-color: $black;
+		grid-column: col-width(11);
+		grid-row: 2;
+	}
+
+	.country {
+		grid-column: span 6;
+		grid-row: 3;
+	}
+
+	& > div {
+		border: 1px solid black;
+		border-radius: 10px;
+		padding: 1rem;
+
+		@media (max-width: 575.98px) {
+			padding: 0.5rem;
+		}
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.value,
+	.country {
+		@media (max-width: 991.98px) {
+			justify-content: flex-start;
+		}
+	}
+
+	.value {
+		@media (max-width: 991.98px) {
+			padding-top: 4rem;
+		}
+	}
+
+	.country {
+		@media (max-width: 991.98px) {
+			padding-top: 2rem;
+		}
+	}
+
+	.title {
+		font-size: 3rem;
+
+		@media (max-width: 991.98px) {
+			font-size: 2rem;
+		}
+
+		@media (max-width: 575.98px) {
+			font-size: 1.2rem;
+		}
+	}
+
+	.description {
+		@media (max-width: 575.98px) {
+			font-size: 0.7rem;
+		}
+	}
+}

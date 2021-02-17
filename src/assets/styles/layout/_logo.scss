@@ -1,0 +1,10 @@
+#logo {
+	h1 {
+		font-size: 5rem;
+		color: $white;
+
+		@media (max-width: 575.98px) {
+			font-size: 3rem;
+		}
+	}
+}

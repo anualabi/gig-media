@@ -1,0 +1,3 @@
+@function col-width($start) {
+	@return $start / span 10;
+}
